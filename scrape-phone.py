@@ -13,7 +13,7 @@ def pyper():
     emails = re.findall(r'[\w.-]+@[\w-]+[.][\w]+', pyperclip.paste())
     #phones=re.findall(r"\+\d{3}\s?0?\d{6,10})
 
-    phones = re.findall(r"^\+?\d{0,3}\s?[.-]?\(?\d{0,10}?\)?[-.\s]?\d{0,10}?", pyperclip.paste())
+    phones = re.findall(r"^\+?\d{0,3}\s?[.-]?\(?\d{0,10}?\)?[-.\s]?\d{0,10}?$", pyperclip.paste())
 
 
     print(colored("\t==========================","yellow"))
